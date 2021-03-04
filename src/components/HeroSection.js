@@ -18,13 +18,13 @@ function HeroSection() {
           >
             EXPLORE
           </Button> 
-          <Button
+          {/* <Button
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
           >
             SUBSCRIBE
-          </Button> 
+          </Button>  */}
             </div>
             
          
