@@ -1,30 +1,38 @@
 import React from "react";
+import './Services.css'
+import ServicesCard from "./ServicesCard";
 
-function services() {
+function Services() {
   return (
-    <div>
-      <div className="services__section">
-        <div className="services__wrapper">
-          <h1 className="services__heading">Services</h1>
-          <div className="services__container">
-            <div className="services__container-cardInfo">
-              <div className="services__container__img">
-                <img src="https://images.unsplash.com/photo-1574607383476-f517f260d30b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" alt="" />
-              </div>
-              <div className="services__content">
-                <div className="services__title">
-                  <h3>Fast Loan</h3>
-                </div>
-                <div className="services__body">
-                  <h3></h3>
-                </div>
-              </div>
-            </div>
-          </div>
+    <>
+    <div className="cards">
+      <h1>Services</h1>
+      <div className="cards__container">
+        <div className="cards__wrapper">
+          <ul className="cards__items">
+          <ServicesCard
+          label ="Fast Loan" 
+          Img="https://images.unsplash.com/photo-1574607383476-f517f260d30b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80" 
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          />
+           <ServicesCard
+          label ="Best Interest" 
+          Img="https://images.unsplash.com/photo-1614370107885-fadf37cbc42d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzF8fGxvYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" 
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          />
+           <ServicesCard
+          label ="No Collateral" 
+          Img="https://images.unsplash.com/photo-1560520031-3a4dc4e9de0c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=666&q=80" 
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+          />
+      
+          </ul>
         </div>
       </div>
     </div>
+      
+    </>
   );
 }
 
-export default services;
+export default Services;

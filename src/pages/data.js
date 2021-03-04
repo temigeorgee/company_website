@@ -27,11 +27,11 @@ export const homeObjOne = {
   };
   
   export const homeObjThree = {
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
     topLine: 'EASY SETUP',
-    headline: 'Super fast and simple onboarding process',
+    // headline: 'Super fast and simple onboarding process',
     description:
       "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
     buttonLabel: 'Start Now',
