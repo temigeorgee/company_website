@@ -2,7 +2,7 @@ import React from "react";
 import './Services.css'
 import ServicesCard from "./ServicesCard";
 
-function Services() {
+function Service() {
   return (
     <>
     <div className="cards">
@@ -35,4 +35,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Service;
