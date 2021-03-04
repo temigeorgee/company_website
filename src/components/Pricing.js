@@ -2,8 +2,8 @@ import React from 'react';
 import { Button } from './Button';
 import './Pricing.css';
 import { FiFeather } from 'react-icons/fi';
-import { BsXDiamondFill } from 'react-icons/bs';
-import { GiCrystalize } from 'react-icons/gi';
+import { BiCommand } from 'react-icons/bi';
+import { HiAcademicCap } from 'react-icons/hi';
 import { IconContext } from 'react-icons/lib';
 import { Link } from 'react-router-dom';
 
@@ -35,7 +35,7 @@ function Pricing () {
             <Link to='/sign-up' className='pricing__container-card'>
               <div className='pricing__container-cardInfo'>
                 <div className='icon'>
-                  <BsXDiamondFill />
+                  <BiCommand />
                 </div>
                 <h3>Regular</h3>
                 <h4>N200,000</h4>
@@ -52,7 +52,7 @@ function Pricing () {
             <Link to='/sign-up' className='pricing__container-card'>
               <div className='pricing__container-cardInfo'>
                 <div className='icon'>
-                  <GiCrystalize />
+                  <HiAcademicCap />
                 </div>
                 <h3>Premium</h3>
                 <h4>N500,000</h4>

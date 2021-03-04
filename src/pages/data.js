@@ -30,13 +30,13 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'EASY SETUP',
-    // headline: 'Super fast and simple onboarding process',
+    topLine: 'EXCLUSIVE OFFER',
+    headline: 'Big loan small interest',
     description:
-      "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
+      "Get as low as 1.5% interest rate. All you need to do is apply and you might be a lucky loanee.",
     buttonLabel: 'Start Now',
     imgStart: 'start',
-    img: 'images/svg-7.svg',
+    // img: 'images/svg-7.svg',
     alt: 'Vault'
   };
   

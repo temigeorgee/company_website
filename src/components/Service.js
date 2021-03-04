@@ -6,7 +6,7 @@ function Service() {
   return (
     <>
     <div className="cards">
-      <h1>Services</h1>
+      <h1 className="services__title">Services</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">

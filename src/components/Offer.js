@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Animatedimage from './Animatedimage';
 import { Button } from './Button';
 import './Offer.css'
 
@@ -15,21 +16,22 @@ function Offer({
     alt,
     imgStart
   }) {
+
     return (
       <>
         <div
-          className={lightBg ? 'offer__hero-section' : 'home__hero-section darkBg'}
+          className={lightBg ? 'offer__hero-section' : 'offer__hero-section darkBg'}
         >
           <div className='container'>
             <div
-              className='row home__hero-row'
+              className='row offer__hero-row'
               style={{
                 display: 'flex',
                 flexDirection: imgStart === 'start' ? 'row-reverse' : 'row'
               }}
             >
               <div className='col'>
-                <div className='home__hero-text-wrapper'>
+                <div className='offer__hero-text-wrapper'>
                   <div className='top-line'>{topLine}</div>
                   <h1 className={lightText ? 'heading' : 'heading dark'}>
                     {headline}
@@ -37,22 +39,23 @@ function Offer({
                   <p
                     className={
                       lightTextDesc
-                        ? 'home__hero-subtitle'
-                        : 'home__hero-subtitle dark'
+                        ? 'offer__hero-subtitle'
+                        : 'offer__hero-subtitle dark'
                     }
                   >
                     {description}
                   </p>
                   <Link to='/sign-up'>
-                    <Button buttonSize='btn--wide' buttonColor='blue'>
+                    <Button buttonSize='btn--wide' buttonColor='transparent'>
                       {buttonLabel}
                     </Button>
                   </Link>
                 </div>
               </div>
               <div className='col'>
-                <div className='home__hero-img-wrapper'>
-                  <img src={img} alt={alt} className='home__hero-img' />
+                <div className='offer__hero-img-wrapper'>
+                  <Animatedimage className='offer__hero-img'/>
+                  {/* <img src={img} alt={alt}  /> */}
                 </div>
               </div>
             </div>
