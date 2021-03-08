@@ -12,3 +12,37 @@
   justify-content: center;
   font-size: 3rem;
 }
+
+.register{
+  height: 100vh;
+  background-color: #252e48;
+}
+
+.register-logo{
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+.register-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  
+@media screen and (max-width: 768px) {
+  .register-logo{
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .register-container{
+   margin-top: 80px;
+  }
+}

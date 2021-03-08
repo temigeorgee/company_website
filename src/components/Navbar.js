@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import { Link as LinkR } from 'react-router-dom';
 import './Navbar.css';
 import { MdFingerprint } from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
+import { Link as LinkS, animateScroll as scroll } from "react-scroll";
+
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -35,49 +37,78 @@ function Navbar() {
     }
   }
   window.addEventListener('scroll', ChangeBackground);
+  
+  const toggleHome = () => {
+    scroll.scrollToTop();
+};
+  
   return (
     <>
       <IconContext.Provider value={{ color: '#fff' }}>
         <nav className={navbar ? 'navbar active': 'navbar'}>
           <div className='navbar-container container'>
-            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            <LinkR to='/' className='navbar-logo'  onClick={toggleHome}>
               <MdFingerprint className='navbar-icon' />
               Tee
-            </Link>
+            </LinkR>
             <div className='menu-icon' onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
-                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                <LinkS to='home' className='nav-links' onClick={closeMobileMenu}>
                   Home
-                </Link>
+                </LinkS>
               </li>
               <li className='nav-item'>
-                <Link
-                  to='/services'
+                <LinkS
+                  to='services'
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
                   Services
-                </Link>
+                </LinkS>
               </li>
               <li className='nav-item'>
-                <Link
-                  to='/products'
+                <LinkS
+                  to='pricing'
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
-                  Products
-                </Link>
+                  Pricing
+                </LinkS>
+              </li>
+              <li className='nav-item'>
+                <LinkS
+                  to='contacts'
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                  className='nav-links'
+                  onClick={closeMobileMenu}
+                >
+                  Contact Us
+                </LinkS>
               </li>
               <li className='nav-btn'>
                 {button ? (
-                  <Link to='/sign-up' className='btn-link'>
+                  <LinkR to='/register' className='btn-link'>
                     <Button buttonStyle='btn--outline'>SIGN UP</Button>
-                  </Link>
+                  </LinkR>
                 ) : (
-                  <Link to='/sign-up' className='btn-link'>
+                  <LinkR to='/register' className='btn-link'>
                     <Button
                       buttonStyle='btn--outline'
                       buttonSize='btn--mobile'
@@ -85,7 +116,7 @@ function Navbar() {
                     >
                       SIGN UP
                     </Button>
-                  </Link>
+                  </LinkR>
                 )}
               </li>
             </ul>

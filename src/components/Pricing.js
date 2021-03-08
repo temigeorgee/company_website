@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 function Pricing () {
   return (
     <IconContext.Provider value={{ color: '#1c2237', size: 64 }}>
-      <div className='pricing__section'>
+      <div className='pricing__section' id='pricing'>
         <div className='pricing__wrapper'>
           <h1 className='pricing__heading'>Loan Packages </h1>
           <div className='pricing__container'>

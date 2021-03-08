@@ -9,7 +9,7 @@ const STYLES = [
   
 const SIZES = ["btn--medium", "btn--large", "btn--mobile", "btn--wide"];
   
-const COLOR = [ "Primary", "purple", "red", "green","transparent"]
+const COLOR = [ "Primary", "purple", "red", "green","transparent","light__purple"]
 
 
 

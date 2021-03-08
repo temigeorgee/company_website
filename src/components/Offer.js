@@ -46,7 +46,7 @@ function Offer({
                     {description}
                   </p>
                   <Link to='/sign-up'>
-                    <Button buttonSize='btn--wide' buttonColor='transparent'>
+                    <Button buttonSize='btn--wide' buttonColor='light__purple'>
                       {buttonLabel}
                     </Button>
                   </Link>

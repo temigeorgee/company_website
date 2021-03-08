@@ -5,7 +5,7 @@ import ServicesCard from "./ServicesCard";
 function Service() {
   return (
     <>
-    <div className="cards">
+    <div className="cards" id="services">
       <h1 className="services__title">Services</h1>
       <div className="cards__container">
         <div className="cards__wrapper">

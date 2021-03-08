@@ -1,9 +1,15 @@
 import React from 'react'
 import { MdFingerprint } from 'react-icons/md';
 import { Link } from 'react-router-dom'
+import { animateScroll as scroll } from "react-scroll";
+
 import './Footer.css'
 
 function Footer() {
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+
     return (
             <>
             <div className="footer">
@@ -22,7 +28,7 @@ function Footer() {
                             </div>
                         </div>
                         <div class="footer-col-2">
-                          <Link to='/' className='footer-logo'>
+                          <Link to='/' className='footer-logo' onClick={toggleHome}>
                             <MdFingerprint className='navbar-icon' />
                             Tee
                             </Link>

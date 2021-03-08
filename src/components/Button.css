@@ -99,6 +99,16 @@
 
 }
 
+.light__purple{
+    background-color: #c287c2;
+    color: #fff;
+}
+
+.light__purple:hover{
+    transform: translateY(-3px);
+    background-color: #855185;
+}
+
 .primary:hover{
     background-color: #fff ;
     color: #242424;

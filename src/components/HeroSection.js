@@ -1,23 +1,27 @@
 import { Button } from './Button'
 import React from 'react'
 import './HeroSection.css'
+import { Link } from 'react-router-dom'
 
 
 function HeroSection() {
     return (
         <>
-          <div className='hero-container'>
+          <div className='hero-container' id="home">
             <video src="/videos/video.mp4" autoPlay loop muted />
             <h1>Get a loan today</h1>
             <p>Start your dream business or startup.</p>
             <div className="hero-btns">
-            <Button
+              <Link to= '/contacts'>
+              <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
           >
-            EXPLORE
-          </Button> 
+            Contact Us
+          </Button>
+              </Link>
+ 
           {/* <Button
           className='btns'
           buttonStyle='btn--primary'
