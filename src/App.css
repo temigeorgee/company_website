@@ -15,7 +15,7 @@
 
 .register{
   height: 100vh;
-  background-color: #252e48;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M1130.6804580401479 467.9468841676574L1005.3765364446555 483.3322711601719 1020.76192343717 608.6361927556643 1146.0658450326623 593.2508057631497z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M215.28 346.12 a139.16 139.16 0 1 0 278.32 0 a139.16 139.16 0 1 0 -278.32 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1010.41 367.88 a140.87 140.87 0 1 0 281.74 0 a140.87 140.87 0 1 0 -281.74 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1230.13 241.53 a150.01 150.01 0 1 0 300.02 0 a150.01 150.01 0 1 0 -300.02 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1385.8145687199167 421.5982699052152L1403.5503674100933 321.0135572372175 1302.9656547420955 303.277758547041 1285.229856051919 403.8624712150387z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M671.169%2c253.096C717.536%2c251.705%2c761.317%2c227.701%2c782.63%2c186.499C802.497%2c148.093%2c788.839%2c104.135%2c767.751%2c66.386C745.965%2c27.389%2c715.74%2c-10.049%2c671.169%2c-13.02C621.981%2c-16.299%2c574.699%2c9.534%2c549.376%2c51.83C523.365%2c95.276%2c521.275%2c150.231%2c547.491%2c193.553C572.88%2c235.509%2c622.151%2c254.567%2c671.169%2c253.096' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
 }
 
 .register-logo{
@@ -39,10 +39,9 @@
 @media screen and (max-width: 768px) {
   .register-logo{
     margin-left: 20px;
-    margin-top: 10px;
   }
 
   .register-container{
-   margin-top: 80px;
+   margin-top: 50px;
   }
 }

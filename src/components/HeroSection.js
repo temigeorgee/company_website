@@ -15,11 +15,11 @@ function HeroSection() {
               <Link to= '/contacts'>
               <Button
           className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
+          buttonSize='btn--wide' buttonColor='light__purple'
           >
-            Contact Us
+            Get Started
           </Button>
+
               </Link>
  
           {/* <Button

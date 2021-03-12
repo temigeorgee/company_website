@@ -1,4 +1,5 @@
 import React from 'react'
+import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import Navbar from '../components/Navbar'
@@ -15,6 +16,7 @@ function Home() {
           <Service/>
           <Offer {...offerObjOne}/>
           <Pricing/>
+          <Contact/>
           <Footer/>
         </>
     )

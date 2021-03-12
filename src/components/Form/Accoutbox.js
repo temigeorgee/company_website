@@ -13,7 +13,7 @@ function Accoutbox() {
                     <h2 className="header-text">Welcome</h2>
                                 <h2 className="header-text">Back</h2>
                                 <h5 className="small-text">
-                                    Please Log in to your account
+                                    Please log in to your account
                                 </h5>
                         </div>
                 </div>

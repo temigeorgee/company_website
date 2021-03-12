@@ -100,13 +100,13 @@
 }
 
 .light__purple{
-    background-color: #c287c2;
+    background-color: #855185;
     color: #fff;
 }
 
 .light__purple:hover{
     transform: translateY(-3px);
-    background-color: #855185;
+    background-color: #c287c2;
 }
 
 .primary:hover{

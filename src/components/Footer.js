@@ -32,7 +32,7 @@ function Footer() {
                             <MdFingerprint className='navbar-icon' />
                             Tee
                             </Link>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus id quas corporis cumque a ea vitae libero minus ratione vel perferendis ipsam, placeat maxime assumenda unde temporibus, error architecto ut.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus id quas corporis.</p>
                         </div>
                         <div class="footer-col-3">
                             <h3>

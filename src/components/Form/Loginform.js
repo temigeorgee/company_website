@@ -9,14 +9,16 @@ function Loginform() {
       <div className="login-box">
         <form className="form-container">
           <input type="email" placeholder="Email" />
+          <br/>
           <input type="password" placeholder="Password" />
-          <br />
-          <Link to="/" className="mutedlink">
-            forgot your password?
-          </Link>
-          <Button buttonSize='btn--wide' buttonColor='light__purple'>
+          <br/>
+          <Button className='btns' buttonSize='btn--wide' buttonColor='light__purple'>
                       Login
                     </Button>
+                    <br />
+          <Link to="/" className="mutedlink">
+            Forgot password?
+          </Link>
         </form>
       </div>
     </>
